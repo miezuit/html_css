@@ -1,11 +1,13 @@
 body {
     background-color: burlywood;
     font-family: sans-serif;
+    text-align: center;
 }
 
-h1 {
+h1, h2 {
     color: darkgreen;
     font-size: 2em;
+    text-align: center;
 }
 
 h3 {
@@ -16,10 +18,34 @@ h3 {
 
 h4 {
     margin-top: 2.5em;
-    color: brown;
 }
 
 p {
     font-weight: lighter;
     font-size: 1.1em;
 }
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(21, 186, 21);
+}
+
+ul {
+    list-style-type: circle;
+}
+
+#ceai {
+    color: rgb(206, 99, 0);
+}
+
+.coffee {
+    color: brown;
+}
+
+
+
