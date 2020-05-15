@@ -1,0 +1,24 @@
+table {
+    border: 2px solid lightcoral;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+td, th {
+    border: 1px solid #20b2aa;
+    padding: 0.2em 0.4em;
+    border-left: unset;
+    border-right: unset;
+}
+th {
+    background-color: rgb(78, 78, 78);
+    color: lightgray;
+    text-align: left;
+}
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
