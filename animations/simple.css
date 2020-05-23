@@ -1,0 +1,31 @@
+div {
+    height: 10em;
+    width: 10em;
+    background-color: orange;
+    color: azure;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 10em;
+    animation-name: myFirstAnimation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+@keyframes myFirstAnimation {
+    from {
+        background-color: orange;
+    }
+    50% {
+        background-color: lightseagreen;
+        transform: translate(20em, 20em) rotate(360deg);
+        border-radius: 1em;
+    }
+    to {
+        background-color: orange;
+        border-radius: 0em;
+        transform: translate(40em, 0em) rotate(720deg);
+    }
+}

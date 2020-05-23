@@ -1,0 +1,10 @@
+.parallax {
+    background-image: url(photographer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
+}
+.text {
+    font-size: 2em;
+}

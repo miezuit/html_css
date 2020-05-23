@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+    background-image: url(img/earth.png), url(img/moon.png), url(img/rocket.png), url(img/space2.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
+    background-size: 25vh, 10vh, 10vh, cover;
+    animation-name: fly;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+@keyframes fly {
+    from {
+        background-position: center center, 75% 70%, 30% 25%, 0% 0%;
+    }
+    to {
+        background-position: center center, 75% 70%, 30% 25%, -1024px 0%;
+    }
+}
