@@ -14,13 +14,22 @@ body {
 #icecream {
     width: 10em;
     height: 15em;
-    background: linear-gradient(130deg, royalblue 25%, lightskyblue 75%);
+    background: linear-gradient(0deg, rgba(255,237,0,1) 0%, rgba(255,237,0,1) 25%, rgba(3,141,208,1) 25%, rgba(3,141,208,1) 50%, rgba(231,126,2,1) 50%, rgba(231,126,2,1) 75%, rgba(178,92,132,1) 75%, rgba(178,92,132,1) 100%);
     background-repeat: repeat-y;
     border-radius: 5em 5em 1em 1em;
+    animation-name: flow;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 #stick {
     width: 3em;
     height: 5em;
     background-color: chocolate;
     border-radius: 0em 0em 1em 1em;
+}
+@keyframes flow {
+    to {
+        background-position: 0px 15em;
+    }
 }
