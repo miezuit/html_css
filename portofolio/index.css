@@ -3,17 +3,24 @@
     padding: 0;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: sans-serif;
 }
 ul {
-    background-color: rgb(244, 155, 49);
+    background-color: rgba(244, 156, 49, 0.844);
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
     padding: 0.5em;
-    z-index: 1;
-    position: relative;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(2px);
 }
 header li {
     padding-left: 0.7em;
@@ -22,7 +29,7 @@ header a {
     text-decoration: none;
     color: white;
 }
-article {
+article#home {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -37,28 +44,83 @@ article {
     background-color: white;
     opacity: 0.7;
     position: absolute;
-    top: 0;
+    top: 2.2em;
     left: 0;
 }
 #hello {
     margin-left: 5em;
-    position: relative;
     z-index: 1;
 }
 #hello h1 {
-    color: rgb(244, 155, 49);
+    text-align: left;
+}
+h1 {
+    color: rgb(250, 154, 36);
     margin-bottom: 1em;
+    margin-top: 1em;
     font-size: 2em;
+    text-align: center;
 }
 #hello p {
     width: 50%;
     margin-bottom: 1em;
 }
 #hello input[type="button"] {
-    background-color: rgb(244, 155, 49);;
+    background-color: rgb(250, 154, 36);
     color: white;
     font-size: 1.1em;
     padding: 0.4em;
     border-style: none;
     border-radius: 0.3em;
+}
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card {
+    font-size: 1.2em;
+}
+.card .name {
+    background-color: orange;
+    color: white;
+    border-top-right-radius: 100%;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    position: relative;
+    bottom: 1.7em;
+    text-align: center;
+}
+.job {
+    color: rgb(108, 108, 108);    
+}
+.card .job {
+    position: relative;
+    bottom: 1.7em;    
+}
+.about_us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.description {
+    width: 50%;
+    border-left-color: rgb(43, 130, 139);
+    border-left-width: 5px;
+    border-left-style: solid;
+    padding: 0.5em;
+    color: rgb(108, 108, 108);
+    font-size: 1.1em;
+    line-height: 1.7em;
+}
+h3 {
+    color: rgb(43, 130, 139);
+    margin-bottom: 0.5em;
+}
+.about_card {
+    margin-right: 1em;
+    text-align: center;
+}
+.about_card img {
+    border-radius: 50%;
 }
