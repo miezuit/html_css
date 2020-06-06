@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+h1 {
+    color: darkorange;
+    animation-name: flipInX;
+    animation-duration: 1s;
+}
+h3 {
+    color: darkcyan;
+    animation-name: flipInX;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
