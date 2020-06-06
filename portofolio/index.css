@@ -8,6 +8,8 @@ html {
 }
 body {
     font-family: sans-serif;
+    --orange-color: rgb(250, 154, 36);
+    --blue-color: rgb(43, 130, 139);
 }
 ul {
     background-color: rgba(244, 156, 49, 0.844);
@@ -57,7 +59,7 @@ article#home {
     text-align: left;
 }
 h1 {
-    color: rgb(250, 154, 36);
+    color: var(--orange-color);
     margin-bottom: 1em;
     margin-top: 1em;
     font-size: 2em;
@@ -68,7 +70,7 @@ h1 {
     margin-bottom: 1em;
 }
 input[type="button"] {
-    background-color: rgb(250, 154, 36);
+    background-color: var(--orange-color);
     color: white;
     font-size: 1.1em;
     padding: 0.4em;
@@ -84,10 +86,10 @@ input[type="button"] {
 .card {
     font-size: 1.2em;
 }
-/* .card:nth-child(2) {
-    animation-name: none;
+.card:hover {
+    animation-name: jello;
     animation-duration: 1s;
-} */
+}
 .card .name {
     background-color: orange;
     color: white;
@@ -112,7 +114,7 @@ input[type="button"] {
 }
 .description {
     width: 50%;
-    border-left-color: rgb(43, 130, 139);
+    border-left-color: var(--blue-color);
     border-left-width: 5px;
     border-left-style: solid;
     padding: 0.5em;
@@ -121,7 +123,7 @@ input[type="button"] {
     line-height: 1.7em;
 }
 h3 {
-    color: rgb(43, 130, 139);
+    color: var(--blue-color);
     margin-bottom: 0.5em;
 }
 .about_card {

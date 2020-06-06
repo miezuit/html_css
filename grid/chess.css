@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#board {
+    height: 50vh;
+    width: 50vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 0.2em;
+}
+#board div {
+    background-color: rgb(57, 57, 57);
+
+}
+#board div:nth-child(2n+1) {
+    background-color: rgb(230, 229, 229);
+}
+
+

@@ -1,0 +1,16 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2fr 5fr 1fr;
+    height: 100vh;
+    grid-gap: 1em;
+}
+div {
+    background-color: dimgray;
+}
+#header {
+    grid-area: 1 / 1 / span 1 / span 3;
+}
+#footer {
+    grid-area: 3 / 1 / span 1 / span 3;
+}
