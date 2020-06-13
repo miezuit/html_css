@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.welcome {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/bg-header.jpg);
+    background-size: cover;
+}
+.logo {
+    width: 7em;
+    height: 7em;
+    background-image: url(img/logo.png);
+    background-size: cover;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+li {
+    padding-left: 1em;
+}
+header a {
+    font-family: 'Alegreya';
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
