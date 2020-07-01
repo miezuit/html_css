@@ -1,0 +1,7 @@
+body {
+    counter-reset: my-counter 0;
+}
+h1::before {
+    content: counter(my-counter, lower-alpha) ". ";
+    counter-increment: my-counter 1;
+}
