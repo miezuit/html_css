@@ -1,0 +1,27 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board {
+    display: grid;
+    grid-template: 1.5em repeat(8, 1fr) 1.5em / repeat(8, 1fr);
+    height: 80vh;
+    width: 80vh;
+    background-color: rgb(80, 37, 37);
+}
+.letter {
+    background-color: rgb(228, 182, 123);
+    text-align: center;
+}
+.cell:nth-child(n+9):nth-child(even):nth-child(-n+16),
+.cell:nth-child(n+17):nth-child(odd):nth-child(-n+24),
+.cell:nth-child(n+25):nth-child(even):nth-child(-n+32),
+.cell:nth-child(n+33):nth-child(odd):nth-child(-n+40),
+.cell:nth-child(n+41):nth-child(even):nth-child(-n+48),
+.cell:nth-child(n+49):nth-child(odd):nth-child(-n+56),
+.cell:nth-child(n+57):nth-child(even):nth-child(-n+64),
+.cell:nth-child(n+65):nth-child(odd):nth-child(-n+72) {
+    background-color: rgb(186, 150, 104);
+}
