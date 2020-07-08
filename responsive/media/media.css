@@ -1,0 +1,40 @@
+/* stilul default (mobile first): */
+body {
+    height: 100vh;
+    background-color: darkorange;
+    font-family: sans-serif;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 0.5em;
+}
+h2 {
+    font-size: 1em;
+    display: none;
+}
+
+/* primul prag */
+/* pentru ecranele care au cel putin 768px aplica urmatorul stil: */
+@media only screen and (min-width: 768px) {
+
+    body {
+        background-color: darkgreen;
+        color: rgb(235, 235, 235);
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+    }
+    h2 {
+        display: initial;
+    }
+}
+
+/* al doilea prag */
+/* pentru ecranele care au cel putin 1024px aplica urmatorul stil: */
+@media only screen and (min-width: 1024px) {
+    body {
+        font-size: 1.5em;
+        color: pink;
+    }
+}

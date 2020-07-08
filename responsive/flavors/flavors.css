@@ -1,0 +1,79 @@
+/* css reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* fundal */
+body {
+    height: 100vh;
+    background-image: url(img/strawberries.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+header {
+    width: 100%;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4em 0.4em;
+    position: relative;
+}
+.sandwitch {
+    width: 2em;
+    height: 0.5em;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+/* default (mobile first) */
+ul {
+    list-style-type: none;
+    margin-left: 2em;
+    margin-top: 0.5em;
+    position: relative;
+}
+a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: inline-block;
+}
+ul.menu a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 3em;
+    text-transform: uppercase;
+    padding-top: 0.2em;
+}
+ul.menu a:hover {
+    color: white;
+}
+
+/* overlay */
+body::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(219, 114, 149, 0.151);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* pentru ecranele care au cel putin 768px aplica urmatorul stil: */
+@media only screen and (min-width: 768px) {
+    ul {
+        transform: rotate(-90deg);
+    }
+    body {
+        align-items: center;
+    }
+    ul.menu a {
+        font-size: 4em;
+    }
+}
+
