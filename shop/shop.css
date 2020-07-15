@@ -1,0 +1,140 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+}
+header .logo {
+    font-size: 3em;
+    padding-left: 0.5em;
+}
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    opacity: 0.9;
+}
+header div.section {
+    display: flex;
+}
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+header li {
+    margin: 1em 0;
+    padding: 0 1em;
+    border-right: 2px solid rgb(28, 28, 28);
+}
+header li:last-child {
+    border-right-style: none;
+}
+header a {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+}
+header div.cart {
+    margin: 1em;
+}
+.welcome {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/pillows.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.welcome h1 {
+    position: relative;
+    bottom: 20%;
+    text-transform: uppercase;
+    color: rgb(29, 29, 29);
+    font-size: 4em;
+    width: 50%;
+}
+.featured {
+    height: 70vh;
+    width: 50vw;
+    margin: 2em auto;
+    background-image: url(img/interior.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.featured h2, .featured h3 {
+    text-transform: uppercase;
+    color: rgb(29, 29, 29);
+    margin: 0.5em 0;
+}
+.buy {
+    margin-top: 0.7em;
+    font-size: 0.7em;
+    display: block;
+    background-color: rgb(243, 220, 177);
+    padding: 0.5em 3em;
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+    font-weight: bold;
+}
+.products h3 {
+    margin-top: 1.1em;
+    color: rgb(243, 220, 177);
+}
+.products h2 {
+    font-size: 1.3em;
+    margin-top: 0.7em;
+    margin-bottom: 1em;
+    color: rgb(29, 29, 29);
+}
+.product_list {
+    margin: auto;
+    display: grid;
+    width: 70vw;
+    height: 80vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.product_name {
+    margin-top: 0.5em;
+    color: rgb(29, 29, 29);
+}
+.product_price {
+    margin-top: 0.5em;
+    color: rgb(29, 29, 29);
+}
+img.product_image {
+    width: 70%;
+}
+.normal_price {
+    color: rgb(164, 164, 164);
+    text-decoration: line-through;
+    padding-right: 0.3em;
+}
+.product.big {
+    grid-area: 2 / 2 / span 1 / span 2;
+}
+.product.big img.product_image {
+    width: 75%;
+}
+

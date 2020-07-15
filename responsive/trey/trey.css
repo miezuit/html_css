@@ -1,0 +1,43 @@
+/* css reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    background-color: rgb(231, 126, 51);
+    color: rgb(247, 247, 219);
+    font-family: sans-serif;
+    padding: 2em 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header, footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+   list-style-type: none;
+   display: flex;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.6em;
+    padding-right: 1.5em;
+}
+img {
+    position: absolute;
+    bottom: -55%;
+    left: 30%;
+}
+h1 {
+    font-size: 14em;
+    text-transform: uppercase;
+    -webkit-text-stroke: 4px rgb(247, 247, 219);
+    color: rgba(255, 255, 255, 0);
+    z-index: 1;
+}

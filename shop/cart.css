@@ -1,0 +1,24 @@
+.cart {
+    margin: 10em;
+}
+img.product_image {
+    width: 40%;
+}
+.cart table {
+    text-align: left;
+    table-layout: fixed;
+    margin: auto;
+    width: 50vw;
+}
+.cart table td {
+    width: 33%;
+}
+.checkout {
+    margin-top: 2em;
+}
+.buy.checkout {
+    width: 120%;
+    text-align: center;
+    position: relative;
+    right: 40%;
+}
