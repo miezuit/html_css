@@ -1,0 +1,92 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: helvetica neue;
+    padding: 0;
+    margin: 0;
+  }
+  #sticker {
+      position: absolute;
+      top: 5em;
+      right: 5em;
+      z-index: 2;
+      font-size: 1em;
+      font-weight: bold;
+      color: white;
+      background-color: seagreen;
+      padding: 7px;
+      border-radius: 0.8em;
+  }
+  
+  nav.nav-main {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+  }
+  
+  nav {
+    background: #333;
+    padding: .15em 0;
+    width: 100%;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 2.5em;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  nav.nav-sticky {
+    position: -webkit-sticky;
+    position: sticky; top: 0px;
+  }
+  
+  header {
+    background-color: coral;
+    color: #fff;
+    display: flex;
+    min-height: 250px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 3.5em;
+  }
+  
+  article {
+    line-height: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 3em;
+  }
+  
+  article h1 {
+    padding-top: 75px;
+  }
+  header h1 {
+    background-color: gray;
+  }
+  
+  .relative {
+    position: relative;
+    top: 0.5em;
+    left: 0.5em;
+  }
+  
+  #services {
+    background-color: gold;
+  }
+  #contact {
+    background-color: orange;
+  }
+  
