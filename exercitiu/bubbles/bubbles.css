@@ -1,0 +1,60 @@
+body {
+    height: 100vh;
+    background-color: lightgoldenrodyellow;
+}
+
+.bubble {
+    width: 4em;
+    height: 4em;
+    border-color: coral;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 2px;
+    position: absolute;
+    transform: scale(1) translateY(110vh);
+    animation-name: bubble;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bubble {
+    to {
+        transform: scale(2) translateY(0);
+    }
+}
+
+@keyframes float {
+    25% {
+        transform: rotate(2deg) translateX(0.5em) translateY(0.25em);
+    }
+    50% {
+        transform: rotate(-1deg) translateX(0em) translateY(-0.25em);
+    }
+    75% {
+        transform: rotate(-2deg) translateX(-0.5em) translateY(-0.5em);
+    }
+}
+
+.soda {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    animation: float;
+    animation-duration: 12s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.soda:nth-child(1) {
+    left: 20vw;
+    top: 20vh;
+}
+.soda:nth-child(2) {
+    left: 30vw;
+    top: 25vh;
+    animation-delay: 1.5s;
+}
+
+

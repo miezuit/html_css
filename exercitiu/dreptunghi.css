@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+div {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+@keyframes disappear {
+    to {
+        height: 0px;
+    }
+}
+@keyframes blink {
+    50% {
+        background-color: white;
+    }
+}
+.disappear {
+    animation-name: disappear;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.blink {
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
